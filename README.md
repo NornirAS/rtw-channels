@@ -2,11 +2,11 @@
 Create a channel that will be open if there will be incoming data or until timeout. The first message will be a WebJS related to the service you connect to. WebJS can be a whole HTML page including JS or a small widget that you can inject into some part of your app. After you get a WebJS you will start to receive data that you can inject inside the received WebJS.
 
 ## Installation
-`npm i @norniras/rtw-channel-request --save`
+`npm i @norniras/rtw-channels --save`
 
 ## How to use
 ```
-const RtwChannel = require('@norniras/rtw-channel-request');
+const RtwChannel = require('@norniras/rtw-channels');
 /**
   This has to be on place. Normally it's a bad practice, but you
   will be fine until you make requests against .cioty.com. It will be

@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NornirAS/rtw-channels.git"
+    "url": "git+https://github.com/norniras/rtw-channels.git"
   },
   "keywords": [
     "RTW",
     "channel"
   ],
   "bugs": {
-    "url": "https://github.com/NornirAS/rtw-channels/issues"
+    "url": "https://github.com/norniras/rtw-channels/issues"
   },
-  "homepage": "https://github.com/NornirAS/rtw-channels#readme"
+  "homepage": "https://github.com/norniras/rtw-channels#readme"
 }
