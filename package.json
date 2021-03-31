@@ -10,7 +10,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "prepublish": "npm run tsc",
+    "prepublish": "npm run build",
     "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nodemon ./lib/main.js"
   },
   "author": "Jevgeni Glazunov",
