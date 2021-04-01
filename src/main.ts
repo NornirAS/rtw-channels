@@ -57,7 +57,7 @@ class Rtw {
 
 }
 
-class RtwString extends Rtw {
+export class RtwString extends Rtw {
   private get headers(): Headers {
     const headers: Headers = super.baseHeaders;
     headers['Synx-Cat'] = '1';
@@ -77,7 +77,7 @@ class RtwString extends Rtw {
   }
 }
 
-class RtwChannel extends Rtw {
+export class RtwChannel extends Rtw {
   private get headers(): Headers {
     const headers: Headers = super.baseHeaders;
     headers['Synx-Cat'] = '4';
@@ -95,9 +95,4 @@ class RtwChannel extends Rtw {
       method: 'POST'
     })
   }
-}
-
-export default {
-  RtwString,
-  RtwChannel
 }
