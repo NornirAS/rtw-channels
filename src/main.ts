@@ -18,7 +18,7 @@ interface RequestParams {
   method: string
 }
 
-class Rtw {
+export class Rtw {
   domain: string
   service: string
   token: string
@@ -58,13 +58,13 @@ class Rtw {
 }
 
 export class RtwString extends Rtw {
-  private get headers(): Headers {
+  public get headers(): Headers {
     const headers: Headers = super.baseHeaders;
     headers['Synx-Cat'] = '1';
     return headers;
   }
 
-  private getBody(data: string): string {
+  public getBody(data: string): string {
     return `${super.baseBody}&${data}`;
   }
 
@@ -78,14 +78,14 @@ export class RtwString extends Rtw {
 }
 
 export class RtwChannel extends Rtw {
-  private get headers(): Headers {
+  public get headers(): Headers {
     const headers: Headers = super.baseHeaders;
     headers['Synx-Cat'] = '4';
     return headers;
   }
 
-  private get body(): string {
-    return `${super.baseBody}&${super.format}`;
+  public get body(): string {
+    return `${super.baseBody}&format=${super.format}`;
   }
 
   async receive() {
