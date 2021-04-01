@@ -1,6 +1,6 @@
 {
   "name": "@norniras/rtw-channels",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Create channel to listen incomming data.",
   "main": "./lib/main.js",
   "types": "./lib/main.d.ts",
