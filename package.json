@@ -7,13 +7,13 @@
   "files": [
     "lib/"
   ],
-  "type": "module",
+  
   "scripts": {
     "build": "tsc",
     "prepublish": "npm run build",
     "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nodemon ./lib/main.js",
     "test": "mocha -r ts-node/register src/tests/**/*.test.ts",
-    "cover": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
+    "cover": "NODE_TLS_REJECT_UNAUTHORIZED=0 nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
   },
   "author": "Jevgeni Glazunov",
   "license": "MIT",
